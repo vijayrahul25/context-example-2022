@@ -15,7 +15,7 @@ export default function App() {
     <GlobalContextProvider>
       <BrowserRouter>
         <Header />
-        <div className="container">
+        <div className="container" style={{ background: "#eee" }}>
           <Routes>
             <Route path="/" element={<CategoryList />} />
             <Route path="category/:categoryId/topics" element={<TopicList />} />

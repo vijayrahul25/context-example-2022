@@ -24,11 +24,10 @@ export const PostList = (props) => {
   return (
     <div className="row">
       <h1>{postData.topic.title}</h1>
-      <ol className="list-group ">
-        {postData.postList.map((post) => (
-          <PostCard key={post.pid} post={post} />
-        ))}
-      </ol>
+
+      {postData.postList.map((post) => (
+        <PostCard key={post.pid} post={post} />
+      ))}
     </div>
   );
 };
