@@ -24,7 +24,6 @@ export const GlobalContextProvider = ({ children }) => {
         `${process.env.REACT_APP_API_URL}/api/category/${process.env.REACT_APP_PARENT_CATEGORY_ID}`
       )
       .then((resp) => {
-        console.log(resp.data.children);
         dispatch({
           type: Actions.LOAD_CATEGORIES_SUCESS,
           data: resp.data.children,
